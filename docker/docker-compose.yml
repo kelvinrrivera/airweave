@@ -186,8 +186,8 @@ services:
     # Use pre-built image of latest release, or override with BACKEND_IMAGE env var for testing
     image: ${BACKEND_IMAGE:-ghcr.io/airweave-ai/airweave-backend:latest}
     # Import all variables from .env file (same as backend)
-    env_file:
-      - ../.env
+    #env_file:
+      #- ../.env
     environment:
       # Override any localhost references for container networking
       - POSTGRES_HOST=postgres
